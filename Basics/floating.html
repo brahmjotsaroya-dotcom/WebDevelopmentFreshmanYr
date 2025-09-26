@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Floating Elements</title>
+
+        <style>
+            .floatimage {
+                padding: 20px;
+                border: 1px solid black;
+            }
+
+            /* clearfix*/
+            .floatimage::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+
+            .floatimage img {
+                width: 200px;
+                float: right;
+            }
+
+            .divFloat {
+                background-color: gray;
+                width: 33.3333%;
+                height: 200px;
+                float: left;
+            }
+
+            .float2 { background-color: beige;}
+        </style>
+    </head>
+
+    <body>
+        <div class="floatimage">
+            <img src="https://soundtrackost.com/wp-content/uploads/2025/08/My-Life-With-the-Walter-Boys-Songs-Season-2.webp" alt="My Lfe With The Walter Boys">
+            <p>When Jackie Howard's parents and sister die suddenly in a car accident, her life is turned upside down. She leaves her privileged New York City world behind to move to rural Colorado and live with her guardian, Dr. Katherine Walter, and her twelve sons. Thrown into the chaos of a loud, messy, boy-filled household, Jackie struggles to adjust while navigating grief, friendship, and unexpected romance. Along the way, she learns about family, resilience, and finding love in unexpected places.</p>
+        </div>
+
+        <div class="divFloat"></div>
+        <div class="divFloat float2"></div>
+        <div class="divFloat"></div>
+    </body>
+</html>

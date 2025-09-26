@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(205, 151, 205);
+            padding: 60px;
+            color: black;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            background-color: purple;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: rgb(66, 2, 66);
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex: 30%;
+            background-color: beige;
+            padding: 20px;
+        }
+
+        main {
+            flex: 70%;
+            padding: 20px;
+        }
+
+        .fake_image {
+            background-color: gray;
+            width: 100%;
+            padding: 20px;
+            color: beige;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgb(66, 2, 66);
+            color: white;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 700px) {
+            nav,
+            .flex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Layout</h1>
+        <p>Resize your browser to see this page respond!</p>
+    </header>
+
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+
+    <div class="flex">
+        <aside>
+            <h2>About Me</h2>
+            <h5>Photo of Me</h5>
+            <div class="fake_image" style="height: 200px">Image</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+            <h1>Sub Header</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quibusdam. Nemo laudantium corrupti nam quaerat pariatur aut molestias dolores voluptatem illo aliquid? Harum, excepturi odio sit culpa earum autem suscipit.</p>
+
+            <div class="fake image" style="height: 75px">Image</div>
+            <div class="fake image" style="height: 75px">Image</div>
+            <div class="fake image" style="height: 75px">Image</div>
+
+
+        </aside>
+
+        <main>
+            <h2>Title Heading</h2>
+            <h5>Title Description <span>September 11th, 2025</span></h5>
+
+            <div class="fake_image" style="height: 400px">Image</div>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quidem. Numquam, explicabo voluptates. Eaque dolor iste deserunt, velit omnis maxime ea voluptatibus consequatur sed, sit aperiam. Laudantium tenetur quas suscipit?</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A dolorum natus, enim cupiditate doloribus blanditiis quae cumque itaque magnam culpa ea sequi animi repudiandae impedit eos obcaecati consequatur molestiae optio!</p>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quibusdam necessitatibus voluptas veniam ad ut. Quam magni expedita dignissimos est iure placeat aperiam. Sint dolor provident deserunt repudiandae sunt illo.</p>
+        </main>
+    </div>
+
+    <footer>
+        <p>This is my foot</p>
+    </footer>
+</body>
+</html>
