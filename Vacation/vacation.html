@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vacation Destination</title>
+    <style>
+        *{box-sizing: border-box;}
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 30px;
+            padding: 12px 50px;
+        }
+
+        nav img {width: 50px;}
+        nav a:first-of-type {margin-left: auto;}
+        nav .login_button {
+            border: 1px solid black;
+            padding: 8px 16px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            border-bottom: 2px solid black;
+            border-top: 2px solid black;
+            margin-top: 30px;
+            background-color: rgb(211, 205, 205);
+        }
+
+        header div {width: 50%;}
+        header img {width: 100%;}
+        header .france {
+            height: 300%;
+            overflow: hidden;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 50px; 
+        }
+
+        .circles img{
+      
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            gap: 150px;
+      
+        }
+
+        .circles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 150px;
+        }
+
+        .places{
+            background-color: rgb(211, 205, 205);
+            padding: 35px 0;
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+
+        .cards-container{
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            flex-wrap: wrap;
+        }
+
+        .card img{
+            height: 200px;
+            width: 250px;
+        }
+
+        .card{
+            background-color: white;
+            width: 300px;
+            box-shadow: 0 4px 8px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="img/eiffel-tower (1).png" alt="Eiffel Tower Icon">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Destinations</a>
+        <a href="#">Sell</a>
+        <a href="#">Contact</a>
+        <a href="#" class="login_button">Login/Sign Up</a>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Paris Destination</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cumque amet ad sequi aut consequuntur nemo, corporis officia esse perspiciatis quis sit obcaecati ex ipsum et, delectus cupiditate quasi facere.</p>
+            <a href="a">Book Now</a>
+        </div>
+        <div class="france">
+            <img src="img/a_HEADER_insider_a_romantics_guide_to_paris_3_1200x1920.jpg" alt="Paris">
+        </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section class="circles">
+        <img src="img/the-louvre-paris-getty.jpg" alt="Louvre Museum">
+        <img src="img/gettyimages-142198198.jpg" alt="Eiffel Tower">
+        <img src="img/efh039.jpg" alt="Arc de Triomphe">
+        <img src="img/place_de_la_concorde.jpg" alt="Place de la Concorde">
+        <img src="img/Paris-attractions-travel-France-Notre-Dame-Cathedral.webp" alt="Notre Dame Cathedral">
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="places">
+    <div class="cards-container">
+        <div class="card">
+            <h1> French Countryside</h1>
+            <img src="img/10.jpg" alt="French Countryside">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptate, dolor quas provident quos consequuntur sed delectus modi quia vitae repellendus, autem suscipit neque debitis sint nobis voluptates? Odio, dignissimos?</p>
+        </div>
+
+        <div class="card">
+            <h1>French City</h1>
+            <img src="img/paris-city-night-1.jpg" alt="French City">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ratione deserunt perferendis iste, consequuntur praesentium iusto magnam quos hic omnis at, tempore consectetur voluptas nesciunt animi error explicabo labore.</p>
+        </div>
+
+        <div class="card">
+            <h1>French Waterside</h1>
+            <img src="img/5a6ad54418a35bb4d1ad7308709ff60a.webp" alt="French Waterside">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur perspiciatis dolore excepturi dignissimos quis odio, necessitatibus libero, suscipit in repellat a minus veniam explicabo earum eum. Ipsa enim adipisci error.</p>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
